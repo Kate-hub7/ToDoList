@@ -1,0 +1,77 @@
+GET http://localhost:8080/see-dairy/1
+
+###
+
+GET http://localhost:8080/see-dairy/1/14-09-2020
+
+###
+
+GET http://localhost:8080/find-all
+
+###
+
+GET http://localhost:8080/find-by-id/1
+
+###
+POST http://localhost:8080/add-affair
+Content-Type: application/json
+
+{
+  "user": "1",
+  "type": "AFFAIR",
+  "day": "14-09-2020",
+  "name": "Homework",
+  "description": "Do the math"
+}
+###
+
+POST http://localhost:8080/add-affair
+Content-Type: application/json
+
+{
+  "user": "1",
+  "type": "BIRTHDAY",
+  "day": "15-09-2020",
+  "name": "Girlfriend's birthday",
+  "description": "Need buy a gift"
+}
+###
+
+POST http://localhost:8080/delete-affair
+Content-Type: application/json
+
+{
+  "id": "3"
+}
+
+
+###
+
+POST http://localhost:8080/finish-affair
+Content-Type: application/json
+
+{
+  "id": "3"
+}
+
+###
+
+POST http://localhost:8080/create-user
+Content-Type: application/json
+
+{
+  "firstName": "Jack",
+  "lastName": "Black",
+  "email": "myemail@mail.ru"
+}
+
+###
+
+POST http://localhost:8080/create-user
+Content-Type: application/json
+
+{
+"firstName": "Violet",
+"lastName": "Black",
+"email": "myemail@mail.ru"
+}
